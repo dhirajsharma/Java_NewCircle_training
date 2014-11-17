@@ -1,0 +1,424 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestNG Example Suite">
+    <groups>
+      <group name="object">
+        <method signature="example.testng.BankAccountTest.compareToSame()" name="compareToSame" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.equalsReflexive()" name="equalsReflexive" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.equalsWithDifferentBalances()" name="equalsWithDifferentBalances" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.hashCodeWithDifferentNames()" name="hashCodeWithDifferentNames" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.compareToSmallerName()" name="compareToSmallerName" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.compareToGreaterName()" name="compareToGreaterName" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.compareToGreaterBalance()" name="compareToGreaterBalance" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.hashCodeWithDifferentBalances()" name="hashCodeWithDifferentBalances" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.compareToSmallerBalance()" name="compareToSmallerBalance" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.hashCodeWithDifferentNamesAndBalances()" name="hashCodeWithDifferentNamesAndBalances" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.hashCodeSame()" name="hashCodeSame" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.equalsWithDifferentNamesAndBalances()" name="equalsWithDifferentNamesAndBalances" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.equalsWithDifferentNames()" name="equalsWithDifferentNames" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.equalsSymmeticAndConsistent()" name="equalsSymmeticAndConsistent" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.equalsWithNull()" name="equalsWithNull" class="example.testng.BankAccountTest"/>
+      </group>
+      <group name="deposit">
+        <method signature="example.testng.BankAccountTest.depositNegative()" name="depositNegative" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.depositZero()" name="depositZero" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.depositPositive()" name="depositPositive" class="example.testng.BankAccountTest"/>
+      </group>
+      <group name="constructor">
+        <method signature="example.testng.BankAccountTest.constructorWithNoBalance()" name="constructorWithNoBalance" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.constructorWithBlankName()" name="constructorWithBlankName" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.constructorWithPositiveBalance()" name="constructorWithPositiveBalance" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.constructorWithNullName()" name="constructorWithNullName" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.constructorWithZeroBalance()" name="constructorWithZeroBalance" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.constructorWithNegativeBalance()" name="constructorWithNegativeBalance" class="example.testng.BankAccountTest"/>
+      </group>
+      <group name="withdraw">
+        <method signature="example.testng.BankAccountTest.withdrawLessThanAvailable()" name="withdrawLessThanAvailable" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.withdrawExact()" name="withdrawExact" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.withdrawZero()" name="withdrawZero" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.withdrawMoreThanAvailable()" name="withdrawMoreThanAvailable" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.withdrawNegative()" name="withdrawNegative" class="example.testng.BankAccountTest"/>
+      </group>
+      <group name="transfer">
+        <method signature="example.testng.BankAccountTest.transferZero()" name="transferZero" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.transferLessThanAvailable()" name="transferLessThanAvailable" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.transferMoreThanAvailable()" name="transferMoreThanAvailable" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.transferExact()" name="transferExact" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.transferNull()" name="transferNull" class="example.testng.BankAccountTest"/>
+        <method signature="example.testng.BankAccountTest.transferNegative()" name="transferNegative" class="example.testng.BankAccountTest"/>
+      </group>
+    </groups>
+    <test name="All">
+      <class name="example.testng.BankAccountTest">
+        <test-method status="PASS" signature="constructorWithZeroBalance()" name="constructorWithZeroBalance" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="depositZero()" name="depositZero" duration-ms="0" depends-on-groups="constructor" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="constructorWithNullName()" name="constructorWithNullName" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Bank account name cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Bank account name cannot be null
+	at example.testng.BankAccount.&lt;init&gt;(BankAccount.java:24)
+	at example.testng.BankAccountTest.constructorWithNullName(BankAccountTest.java:9)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:607)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:874)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:689)
+	at org.testng.TestRunner.privateRun(TestRunner.java:566)
+	at org.testng.TestRunner.run(TestRunner.java:466)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:301)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:276)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:191)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:808)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:776)
+	at org.testng.TestNG.run(TestNG.java:701)
+	at org.testng.TestNG.privateMain(TestNG.java:840)
+	at org.testng.TestNG.main(TestNG.java:818)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="withdrawMoreThanAvailable()" name="withdrawMoreThanAvailable" duration-ms="1" depends-on-groups="constructor" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+          <exception class="example.testng.InsufficientBalanceException">
+            <message>
+              <![CDATA[Available $100.0 but required $150.0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[example.testng.InsufficientBalanceException: Available $100.0 but required $150.0
+	at example.testng.BankAccount.withdraw(BankAccount.java:83)
+	at example.testng.BankAccountTest.withdrawMoreThanAvailable(BankAccountTest.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:607)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:874)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:689)
+	at org.testng.TestRunner.privateRun(TestRunner.java:566)
+	at org.testng.TestRunner.run(TestRunner.java:466)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:301)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:276)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:191)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:808)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:776)
+	at org.testng.TestNG.run(TestNG.java:701)
+	at org.testng.TestNG.privateMain(TestNG.java:840)
+	at org.testng.TestNG.main(TestNG.java:818)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="hashCodeWithDifferentBalances()" name="hashCodeWithDifferentBalances" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="compareToGreaterName()" name="compareToGreaterName" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="hashCodeWithDifferentNamesAndBalances()" name="hashCodeWithDifferentNamesAndBalances" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="equalsWithDifferentNames()" name="equalsWithDifferentNames" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="compareToSmallerName()" name="compareToSmallerName" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="compareToGreaterBalance()" name="compareToGreaterBalance" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="constructorWithPositiveBalance()" name="constructorWithPositiveBalance" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="constructorWithBlankName()" name="constructorWithBlankName" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Bank account name cannot be blank]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Bank account name cannot be blank
+	at example.testng.BankAccount.&lt;init&gt;(BankAccount.java:26)
+	at example.testng.BankAccountTest.constructorWithBlankName(BankAccountTest.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:607)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:874)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:689)
+	at org.testng.TestRunner.privateRun(TestRunner.java:566)
+	at org.testng.TestRunner.run(TestRunner.java:466)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:301)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:276)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:191)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:808)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:776)
+	at org.testng.TestNG.run(TestNG.java:701)
+	at org.testng.TestNG.privateMain(TestNG.java:840)
+	at org.testng.TestNG.main(TestNG.java:818)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="constructorWithNoBalance()" name="constructorWithNoBalance" duration-ms="2" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="depositNegative()" name="depositNegative" duration-ms="0" depends-on-groups="constructor" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Amount -50.0 must not be negative]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Amount -50.0 must not be negative
+	at example.testng.BankAccount.deposit(BankAccount.java:63)
+	at example.testng.BankAccountTest.depositNegative(BankAccountTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:607)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:874)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:689)
+	at org.testng.TestRunner.privateRun(TestRunner.java:566)
+	at org.testng.TestRunner.run(TestRunner.java:466)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:301)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:276)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:191)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:808)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:776)
+	at org.testng.TestNG.run(TestNG.java:701)
+	at org.testng.TestNG.privateMain(TestNG.java:840)
+	at org.testng.TestNG.main(TestNG.java:818)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="equalsWithDifferentNamesAndBalances()" name="equalsWithDifferentNamesAndBalances" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="transferNegative()" name="transferNegative" duration-ms="0" depends-on-groups="deposit, withdraw" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Amount -50.0 must not be negative]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Amount -50.0 must not be negative
+	at example.testng.BankAccount.withdraw(BankAccount.java:80)
+	at example.testng.BankAccount.transferFrom(BankAccount.java:100)
+	at example.testng.BankAccountTest.transferNegative(BankAccountTest.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:607)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:874)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:689)
+	at org.testng.TestRunner.privateRun(TestRunner.java:566)
+	at org.testng.TestRunner.run(TestRunner.java:466)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:301)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:276)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:191)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:808)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:776)
+	at org.testng.TestNG.run(TestNG.java:701)
+	at org.testng.TestNG.privateMain(TestNG.java:840)
+	at org.testng.TestNG.main(TestNG.java:818)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="transferZero()" name="transferZero" duration-ms="0" depends-on-groups="deposit, withdraw" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="transferMoreThanAvailable()" name="transferMoreThanAvailable" duration-ms="0" depends-on-groups="deposit, withdraw" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+          <exception class="example.testng.InsufficientBalanceException">
+            <message>
+              <![CDATA[Available $75.0 but required $150.0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[example.testng.InsufficientBalanceException: Available $75.0 but required $150.0
+	at example.testng.BankAccount.withdraw(BankAccount.java:83)
+	at example.testng.BankAccount.transferFrom(BankAccount.java:100)
+	at example.testng.BankAccountTest.transferMoreThanAvailable(BankAccountTest.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:607)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:874)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:689)
+	at org.testng.TestRunner.privateRun(TestRunner.java:566)
+	at org.testng.TestRunner.run(TestRunner.java:466)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:301)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:276)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:191)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:808)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:776)
+	at org.testng.TestNG.run(TestNG.java:701)
+	at org.testng.TestNG.privateMain(TestNG.java:840)
+	at org.testng.TestNG.main(TestNG.java:818)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="compareToSmallerBalance()" name="compareToSmallerBalance" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="withdrawNegative()" name="withdrawNegative" duration-ms="0" depends-on-groups="constructor" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Amount -50.0 must not be negative]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Amount -50.0 must not be negative
+	at example.testng.BankAccount.withdraw(BankAccount.java:80)
+	at example.testng.BankAccountTest.withdrawNegative(BankAccountTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:607)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:874)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:689)
+	at org.testng.TestRunner.privateRun(TestRunner.java:566)
+	at org.testng.TestRunner.run(TestRunner.java:466)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:301)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:276)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:191)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:808)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:776)
+	at org.testng.TestNG.run(TestNG.java:701)
+	at org.testng.TestNG.privateMain(TestNG.java:840)
+	at org.testng.TestNG.main(TestNG.java:818)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="hashCodeWithDifferentNames()" name="hashCodeWithDifferentNames" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="transferLessThanAvailable()" name="transferLessThanAvailable" duration-ms="0" depends-on-groups="deposit, withdraw" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="withdrawZero()" name="withdrawZero" duration-ms="0" depends-on-groups="constructor" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="equalsWithNull()" name="equalsWithNull" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="constructorWithNegativeBalance()" name="constructorWithNegativeBalance" duration-ms="1" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Amount -50.0 must not be negative]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Amount -50.0 must not be negative
+	at example.testng.BankAccount.deposit(BankAccount.java:63)
+	at example.testng.BankAccount.&lt;init&gt;(BankAccount.java:43)
+	at example.testng.BankAccountTest.constructorWithNegativeBalance(BankAccountTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:607)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:874)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:689)
+	at org.testng.TestRunner.privateRun(TestRunner.java:566)
+	at org.testng.TestRunner.run(TestRunner.java:466)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:301)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:276)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:191)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:808)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:776)
+	at org.testng.TestNG.run(TestNG.java:701)
+	at org.testng.TestNG.privateMain(TestNG.java:840)
+	at org.testng.TestNG.main(TestNG.java:818)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="withdrawExact()" name="withdrawExact" duration-ms="0" depends-on-groups="constructor" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="transferNull()" name="transferNull" duration-ms="0" depends-on-groups="deposit, withdraw" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at example.testng.BankAccount.transferFrom(BankAccount.java:100)
+	at example.testng.BankAccountTest.transferNull(BankAccountTest.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:607)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:874)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:689)
+	at org.testng.TestRunner.privateRun(TestRunner.java:566)
+	at org.testng.TestRunner.run(TestRunner.java:466)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:301)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:296)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:276)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:191)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:808)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:776)
+	at org.testng.TestNG.run(TestNG.java:701)
+	at org.testng.TestNG.privateMain(TestNG.java:840)
+	at org.testng.TestNG.main(TestNG.java:818)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="equalsReflexive()" name="equalsReflexive" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="compareToSame()" name="compareToSame" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="equalsWithDifferentBalances()" name="equalsWithDifferentBalances" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="transferExact()" name="transferExact" duration-ms="0" depends-on-groups="deposit, withdraw" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="withdrawLessThanAvailable()" name="withdrawLessThanAvailable" duration-ms="0" depends-on-groups="constructor" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="equalsSymmeticAndConsistent()" name="equalsSymmeticAndConsistent" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="hashCodeSame()" name="hashCodeSame" duration-ms="0" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+        <test-method status="PASS" signature="depositPositive()" name="depositPositive" duration-ms="1" depends-on-groups="constructor" started-at="2008-01-02T15:18:13Z" finished-at="2008-01-02T15:18:13Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

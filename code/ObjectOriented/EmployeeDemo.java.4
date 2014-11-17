@@ -1,0 +1,26 @@
+public class EmployeeDemo {
+    public static void main(String[] args) {
+        Employee e1 = new Employee();
+        e1.name = "John";
+        e1.ssn = "555-12-345";
+        e1.emailAddress = "john@company.com";
+        
+        Employee e2 = new Employee();
+        e2.name = "Tom";
+        e2.ssn = "456-78-901";
+        int y = 1974;
+        e2.setYearOfBirth(y);
+
+        e1.print();
+        e2.print();
+        System.out.println(y);
+
+        printYearOfBirth(e2);
+        System.out.println(e2.yearOfBirth);
+    }
+
+    static void printYearOfBirth(Employee e) {
+        System.out.println(e.yearOfBirth);
+        e.yearOfBirth = -1;
+    }
+}

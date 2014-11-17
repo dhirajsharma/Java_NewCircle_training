@@ -1,0 +1,100 @@
+import java.io.Serializable;
+
+public class Employee implements Serializable {
+    private String name;
+    private final String ssn;
+    private String emailAddress;
+    private int yearOfBirth;
+    private int extraVacationDays = 0;
+    private static int baseVacationDays = 10;
+
+    public Employee(String ssn) {
+        this.ssn = ssn;
+    }
+
+    public Employee(String name, String ssn) {
+        this(ssn);
+        this.name = name;
+    }
+
+    public Employee(String name, String ssn, String emailAddress) {
+        this(name, ssn);
+        this.emailAddress = emailAddress;
+    }
+
+    public Employee(String ssn, int yearOfBirth) {
+        this(ssn);
+        this.yearOfBirth = yearOfBirth;
+    }
+
+    public void setName(String name) {
+        if (name != null && name.length() > 0) {
+            this.name = name;
+        }
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getSsn() {
+        return this.ssn;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public String getEmailAddress() {
+        return this.emailAddress;
+    }
+
+    public void setYearOfBirth(int yearOfBirth) {
+        if (yearOfBirth > 1900) {
+            this.yearOfBirth = yearOfBirth;
+        }
+    }
+
+    public static void setBaseVacationDays(final int days) {
+        baseVacationDays = days < 10? 10 : days;
+    }
+
+    public static int getBaseVacationDays() {
+        return baseVacationDays;
+    }    
+
+    public void setExtraVacationDays(final int days) {
+        extraVacationDays = days < 0? 0 : days;
+    }
+
+    public int getExtraVacationDays() {
+        return extraVacationDays;
+    }
+
+
+    public int getVacationDays() {
+        return baseVacationDays + extraVacationDays;
+    } 
+
+    public void print(String header, String footer) {
+        if (header != null) {
+            System.out.println(header);
+        }
+        System.out.println("Name: " + name);
+        System.out.println("SSN: " + ssn);
+        System.out.println("Email Address: " + emailAddress);
+        System.out.println("Year Of Birth: " + yearOfBirth);
+        System.out.println("Vacation Days: " + getVacationDays());
+        if (footer != null) {
+            System.out.println(footer);
+        }
+    }
+
+    public void print(String header) {
+        this.print(header, null);
+    }
+
+    public void print() {
+        this.print(null);
+    }
+}

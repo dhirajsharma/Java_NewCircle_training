@@ -1,0 +1,23 @@
+public class EmployeeDemo {
+    public static void main(String[] args) {
+        Employee e1 = new Employee();
+        e1.name = "John";
+        e1.ssn = "555-12-345";
+        e1.emailAddress = "john@company.com";
+        
+        Employee e2 = new Employee();
+        e2.name = "Tom";
+        e2.ssn = "456-78-901";
+        e2.yearOfBirth = 1974;
+
+        printEmployee(e1);
+        printEmployee(e2);
+    }
+
+    static void printEmployee(Employee e) {
+        System.out.println("Name: " + e.name);
+        System.out.println("SSN: " + e.ssn);
+        System.out.println("Email Address: " + e.emailAddress);
+        System.out.println("Year Of Birth: " + e.yearOfBirth);
+    }
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="example.testng.BankAccountTest" failures="3" tests="34" time="0.155" errors="0">
+  <properties/>
+  <testcase name="constructorWithNoBalance" time="0.019" classname="example.testng.BankAccountTest"/>
+  <testcase name="constructorWithBlankName" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="constructorWithPositiveBalance" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="constructorWithNullName" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="constructorWithZeroBalance" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="constructorWithNegativeBalance" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="withdrawLessThanAvailable" time="0.0010" classname="example.testng.BankAccountTest">
+    <failure type="java.lang.AssertionError" message="76.0">
+      <![CDATA[java.lang.AssertionError: 76.0
+	at example.testng.BankAccountTest.withdrawLessThanAvailable(BankAccountTest.java:82)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="depositNegative" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="depositZero" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="withdrawExact" time="0.0010" classname="example.testng.BankAccountTest">
+    <failure type="java.lang.AssertionError" message="1.0">
+      <![CDATA[java.lang.AssertionError: 1.0
+	at example.testng.BankAccountTest.withdrawExact(BankAccountTest.java:95)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="depositPositive" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="withdrawZero" time="0.0010" classname="example.testng.BankAccountTest">
+    <failure type="java.lang.AssertionError" message="101.0">
+      <![CDATA[java.lang.AssertionError: 101.0
+	at example.testng.BankAccountTest.withdrawZero(BankAccountTest.java:75)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="withdrawMoreThanAvailable" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="withdrawNegative" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="transferZero" time="0.0010" classname="example.testng.BankAccountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="transferLessThanAvailable" time="0.0" classname="example.testng.BankAccountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="transferMoreThanAvailable" time="0.0020" classname="example.testng.BankAccountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="transferExact" time="0.0010" classname="example.testng.BankAccountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="transferNull" time="0.0010" classname="example.testng.BankAccountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="transferNegative" time="0.0010" classname="example.testng.BankAccountTest">
+    <skipped/>
+  </testcase>
+  <testcase name="compareToSame" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="equalsReflexive" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="equalsWithDifferentBalances" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="hashCodeWithDifferentNames" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="compareToSmallerName" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="compareToGreaterName" time="0.0" classname="example.testng.BankAccountTest"/>
+  <testcase name="compareToGreaterBalance" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="hashCodeWithDifferentBalances" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="compareToSmallerBalance" time="0.0020" classname="example.testng.BankAccountTest"/>
+  <testcase name="hashCodeWithDifferentNamesAndBalances" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="equalsWithDifferentNamesAndBalances" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="equalsWithDifferentNames" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="equalsSymmeticAndConsistent" time="0.0010" classname="example.testng.BankAccountTest"/>
+  <testcase name="equalsWithNull" time="0.0010" classname="example.testng.BankAccountTest"/>
+</testsuite>

@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [Failed suite [TestNG Example Suite]]" junit="false" annotations="JDK">
+  <test name="All(failed)(failed)" junit="false" annotations="JDK">
+    <classes>
+      <class name="example.testng.BankAccountTest">
+        <methods>
+          <include name="withdrawLessThanAvailable"/>
+          <include name="withdrawZero"/>
+          <include name="transferExact"/>
+          <include name="transferLessThanAvailable"/>
+          <include name="transferZero"/>
+          <include name="withdrawExact"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

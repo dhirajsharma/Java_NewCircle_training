@@ -1,0 +1,20 @@
+public class EmployeeDemo {
+    public static void main(String[] args) {
+        Employee e1 = new Employee();
+        e1.name = "John";
+        e1.ssn = "555-12-345";
+        e1.emailAddress = "john@company.com";
+        
+        Employee e2 = new Employee();
+        e2.name = "Tom";
+        e2.ssn = "456-78-901";
+        e2.setYearOfBirth(1974);
+
+        Employee.vacationDays = 15;
+
+        e1.print();
+        e2.print();
+
+    }
+}
+

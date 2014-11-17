@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="All(failed)" failures="6" tests="6" time="0.093" errors="0">
+  <properties/>
+  <testcase name="withdrawLessThanAvailable" time="0.081" classname="example.testng.BankAccountTest">
+    <failure type="java.lang.AssertionError" message="76.0">
+      <![CDATA[java.lang.AssertionError: 76.0
+	at example.testng.BankAccountTest.withdrawLessThanAvailable(BankAccountTest.java:82)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="withdrawZero" time="0.0" classname="example.testng.BankAccountTest">
+    <failure type="java.lang.AssertionError" message="101.0">
+      <![CDATA[java.lang.AssertionError: 101.0
+	at example.testng.BankAccountTest.withdrawZero(BankAccountTest.java:75)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="transferExact" time="0.0" classname="example.testng.BankAccountTest">
+    <failure type="java.lang.AssertionError" message="1.0">
+      <![CDATA[java.lang.AssertionError: 1.0
+	at example.testng.BankAccountTest.transferExact(BankAccountTest.java:135)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="transferZero" time="0.0" classname="example.testng.BankAccountTest">
+    <failure type="java.lang.AssertionError" message="76.0">
+      <![CDATA[java.lang.AssertionError: 76.0
+	at example.testng.BankAccountTest.transferZero(BankAccountTest.java:117)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="transferLessThanAvailable" time="0.0" classname="example.testng.BankAccountTest">
+    <failure type="java.lang.AssertionError" message="26.0">
+      <![CDATA[java.lang.AssertionError: 26.0
+	at example.testng.BankAccountTest.transferLessThanAvailable(BankAccountTest.java:126)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="withdrawExact" time="0.0" classname="example.testng.BankAccountTest">
+    <failure type="java.lang.AssertionError" message="1.0">
+      <![CDATA[java.lang.AssertionError: 1.0
+	at example.testng.BankAccountTest.withdrawExact(BankAccountTest.java:95)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,18 @@
+class Employee {
+    String name;
+    String ssn;
+    String emailAddress;
+    int yearOfBirth;
+
+    void setYearOfBirth(int year) {
+        yearOfBirth = year;
+        year = -1;
+    }
+
+    void print() {
+        System.out.println("Name: " + name);
+        System.out.println("SSN: " + ssn);
+        System.out.println("Email Address: " + emailAddress);
+        System.out.println("Year Of Birth: " + yearOfBirth);
+    }
+}

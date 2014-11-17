@@ -1,0 +1,32 @@
+<project default="test" basedir=".">
+
+	<property name="source.dir" value="src" />
+	<property name="test.dir" value="test" />
+	<property name="classes.dir" value="bin" />
+	<property name="test-output.dir" value="test-output" />
+
+	<path id="cp">
+		<pathelement location="lib/testng-5.7-jdk15.jar" />
+		<pathelement location="${classes.dir}" />
+	</path>
+
+	<taskdef resource="testngtasks" classpathref="cp" />
+
+	<target name="clean" description="Delete all generated files and directories">
+		<delete dir="${classes.dir}" />
+		<delete dir="${test-output.dir}" />
+	</target>
+
+	<target name="compile" description="Compile files">
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${source.dir}" destdir="${classes.dir}" classpathref="cp" debug="on" deprecation="on" />
+		<javac srcdir="${test.dir}" destdir="${classes.dir}" classpathref="cp" debug="on" deprecation="on" />
+	</target>
+
+	<target name="test" depends="compile" description="Run TestNG tests">
+		<testng classpathref="cp" outputdir="${test-output.dir}">
+			<xmlfileset file="testng.xml" />
+		</testng>
+	</target>
+
+</project>
